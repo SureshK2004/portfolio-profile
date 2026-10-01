@@ -43,7 +43,7 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "PostgreSQL", detail: "Complex queries, indexing & analytics" },
       { name: "MySQL", detail: "Relational storage & transactional safety" },
-      { name: "MongoDB", detail: "Document stores & dynamic schemas" },
+      // { name: "MongoDB", detail: "Document stores & dynamic schemas" },
       { name: "SQLite", detail: "Embedded storage & local dev testing" },
       { name: "SQL", detail: "Aggregations, joins & performance tuning" }
     ]
@@ -68,7 +68,7 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "Git", detail: "Branching workflows & version control" },
       { name: "GitHub", detail: "Code review, CI/CD actions & repositories" },
-      { name: "Linux", detail: "Server administration, bash & permissions" },
+      // { name: "Linux", detail: "Server administration, bash & permissions" },
       { name: "Cron", detail: "Scheduled automated maintenance jobs" },
       { name: "S3", detail: "Object storage & asset management" },
       { name: "DigitalOcean", detail: "Spaces bucket integration & compute" },
