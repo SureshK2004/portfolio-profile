@@ -91,7 +91,7 @@ export function getMockResponse(query: string): string {
     normalized.includes("datamoo") ||
     normalized.includes("work")
   ) {
-    return "Suresh currently works as a Python Backend Developer at Datamoo.ai in Chennai (11 months of production experience), building FaceViz. He holds a BCA degree (8.05 CGPA) and completed developer internships at Shiash Info Solutions and Polenza Tech Solutions.";
+    return "Suresh currently works as a Python Backend Developer at Datamoo.ai in Chennai (1 year of production experience), building FaceViz. He holds a BCA degree (8.05 CGPA) and completed developer internships at Shiash Info Solutions and Polenza Tech Solutions.";
   }
   if (
     normalized.includes("education") ||

@@ -1,7 +1,7 @@
 import React from 'react';
 import { faceVizData } from '../../data/projects';
 import { ArchitectureVisual } from './ArchitectureVisual';
-import { ExternalLink, CheckCircle2, Shield, Clock, MapPin, DollarSign, CalendarCheck, FileCheck, HelpCircle, FileSpreadsheet, BarChart3 } from 'lucide-react';
+import { CheckCircle2, Shield, Clock, MapPin, DollarSign, CalendarCheck, FileCheck, HelpCircle, FileSpreadsheet, BarChart3 } from 'lucide-react';
 import { ScrollReveal } from '../ScrollReveal';
 
 const moduleIcons: Record<string, React.ReactNode> = {
@@ -42,18 +42,10 @@ export const FaceViz: React.FC = () => {
             </div>
 
             <div className="flex flex-wrap gap-2.5 shrink-0">
-              {faceVizData.liveLinks.map((link) => (
-                <a
-                  key={link.url}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl theme-card hover:border-purple-500 text-[var(--text-purple)] text-xs font-mono-tech font-semibold transition-all shadow-sm hover:scale-105"
-                >
-                  <span>{link.label}</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              ))}
+              <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl theme-card border border-purple-500/25 text-[var(--text-purple)] text-xs font-mono-tech font-semibold shadow-sm">
+                <span className="w-2 h-2 rounded-full bg-purple-500" />
+                <span>FaceViz</span>
+              </div>
             </div>
           </div>
         </ScrollReveal>

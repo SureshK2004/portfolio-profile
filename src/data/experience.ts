@@ -19,10 +19,10 @@ export interface ExperienceData {
 export const experienceData: ExperienceData = {
   company: "Datamoo.ai",
   role: "Python Backend Developer",
-  period: "11 Months (Current)",
+  period: "1 Year (Current)",
   location: "Chennai, India",
   description:
-    "Working on FaceViz (faceviz.aivapm.com | base.faceviz.com), an AI-based facial recognition attendance and workforce management platform designed to automate daily employee operations for enterprise and field teams.",
+    "Working on FaceViz, an AI-based facial recognition attendance and workforce management platform designed to automate daily employee operations for enterprise and field teams.",
   responsibilities: [
     "Developed and maintained core backend services for FaceViz using Python and Django.",
     "Designed and implemented REST APIs using Django REST Framework for attendance, employee management, and HR analytics.",

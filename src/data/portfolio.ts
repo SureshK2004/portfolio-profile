@@ -45,11 +45,11 @@ export const portfolioData: PortfolioMeta = {
   resumeUrl: "/Suresh_K-resume.pdf",
   profileImage: "/image.png",
   aboutParagraph1:
-    "I am a Python Backend Developer with 11 months of production experience building scalable, production-grade backend systems using Python, Django, and Django REST Framework at Datamoo AI. My primary work centers around FaceViz — an AI-powered enterprise workforce management and biometric attendance platform serving active businesses.",
+    "I am a Python Backend Developer with 1 year of production experience building scalable, production-grade backend systems using Python, Django, and Django REST Framework at Datamoo AI. My primary work centers around FaceViz — an AI-powered enterprise workforce management and biometric attendance platform serving active businesses.",
   aboutParagraph2:
     "My hands-on engineering spans architecting RESTful APIs, building real-time punch-in/out workflows, optimizing complex SQL queries across PostgreSQL and MySQL, and integrating end-to-end computer-vision CCTV pipelines using OpenCV, InsightFace, and RTSP streams for automatic employee attendance.",
   stats: [
-    { value: "11+ MOS", label: "PRODUCTION", sublabel: "EXPERIENCE" },
+    { value: "01 YEAR", label: "PRODUCTION", sublabel: "EXPERIENCE" },
     { value: "10 STAGES", label: "CCTV VISION", sublabel: "PIPELINE" },
     { value: "09 MODULES", label: "FACEVIZ PLATFORM", sublabel: "BACKEND & APIS" },
     { value: "8.05 CGPA", label: "BCA DEGREE", sublabel: "ACADEMIC MERIT" }

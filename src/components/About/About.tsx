@@ -41,7 +41,7 @@ export const About: React.FC = () => {
                 <div className="text-center sm:text-left">
                   <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full theme-badge text-[10px] font-mono-tech font-bold uppercase mb-2">
                     <Briefcase className="w-3 h-3 text-[var(--text-purple)]" />
-                    <span>Datamoo.ai · 11 Months</span>
+                    <span>Datamoo.ai · 1 Year</span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-extrabold font-heading text-[var(--text-heading)]">
                     Suresh K.

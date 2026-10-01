@@ -27,10 +27,6 @@ export const faceVizData = {
   title: "Workforce Management & Employee Operations Platform",
   description:
     "FaceViz is a full-stack workforce management platform designed to simplify and digitize daily employee operations for office-based and field teams.",
-  liveLinks: [
-    { label: "faceviz.aivapm.com", url: "https://faceviz.aivapm.com" },
-    { label: "base.faceviz.com", url: "https://base.faceviz.com" }
-  ],
   modules: [
     { title: "Attendance", description: "Real-time punch-in/out, biometric sync, and daily shift calculations.", badge: "Core" },
     { title: "Location & Geofencing", description: "GPS verification, radius validation, and field visit verification.", badge: "Security" },

@@ -95,7 +95,7 @@ export const ChatWindow: React.FC<ChatWindowProps> = ({ onClose }) => {
   const isBusy = chatState === 'sending' || chatState === 'loading';
 
   return (
-    <div className="w-full sm:w-[410px] h-[550px] max-h-[85vh] flex flex-col bg-white dark:bg-[#0D0D16] border border-purple-200 dark:border-purple-800/40 rounded-2xl shadow-2xl shadow-purple-950/20 dark:shadow-purple-950/60 overflow-hidden backdrop-blur-xl">
+    <div className="w-[calc(100vw-1.5rem)] sm:w-[410px] max-w-[410px] h-[520px] max-h-[85vh] flex flex-col bg-white dark:bg-[#0D0D16] border border-purple-200 dark:border-purple-800/40 rounded-2xl shadow-2xl shadow-purple-950/20 dark:shadow-purple-950/60 overflow-hidden backdrop-blur-xl">
       {/* Header */}
       <ChatHeader
         onClose={onClose}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, FileText, MapPin, Code2, Database, Eye, ExternalLink } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, FileText, MapPin, Code2, Database, Eye } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import { HeroArchitecture } from './HeroArchitecture';
 import facevizImg from '../../assets/faceviz.png';
@@ -114,8 +114,7 @@ export const Hero: React.FC = () => {
 
                   <div className="flex items-center gap-2">
                     <div className="px-2.5 py-0.5 rounded-md bg-neutral-900/90 border border-purple-500/25 text-[10px] font-mono-tech text-purple-300 flex items-center gap-1.5">
-                      <span>faceviz.aivapm.com</span>
-                      <ExternalLink className="w-2.5 h-2.5 text-purple-400" />
+                      <span>FaceViz</span>
                     </div>
 
                     <span className="text-[10px] font-mono-tech text-emerald-400 flex items-center gap-1">
