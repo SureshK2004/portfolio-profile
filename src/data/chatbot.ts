@@ -113,7 +113,7 @@ export function getMockResponse(query: string): string {
     normalized.includes("cv") ||
     normalized.includes("download")
   ) {
-    return "You can view or download Suresh's complete resume using the button in the hero section or header, or directly link to /Suresh_K-resume.pdf.";
+    return "You can view or download Suresh's complete resume using the button in the hero section or contact section, or directly link to /suresh_resume_2026.pdf.";
   }
 
   return "I can answer questions regarding Suresh's experience at DataMoo AI, his work on FaceViz, the CCTV Face Recognition pipeline, his technical skill toolbox, or how to contact him. Try one of the suggested prompts below!";

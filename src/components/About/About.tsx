@@ -2,6 +2,7 @@ import React from 'react';
 import { portfolioData } from '../../data/portfolio';
 import { ShieldCheck, Award, GraduationCap, Briefcase } from 'lucide-react';
 import { ScrollReveal } from '../ScrollReveal';
+import logoImg from '../../assets/logo.png';
 
 export const About: React.FC = () => {
   return (
@@ -38,10 +39,17 @@ export const About: React.FC = () => {
                   <span className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-[var(--bg-primary)] animate-pulse" title="Available for opportunities" />
                 </div>
 
-                <div className="text-center sm:text-left">
-                  <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full theme-badge text-[10px] font-mono-tech font-bold uppercase mb-2">
-                    <Briefcase className="w-3 h-3 text-[var(--text-purple)]" />
-                    <span>Datamoo.ai · 1 Year</span>
+                <div className="text-center sm:text-left flex-1">
+                  <div className="flex flex-wrap items-center justify-center sm:justify-between gap-2 mb-2">
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full theme-badge text-[10px] font-mono-tech font-bold uppercase">
+                      <Briefcase className="w-3 h-3 text-[var(--text-purple)]" />
+                      <span>Datamoo.ai · 1 Year</span>
+                    </div>
+                    <img
+                      src={logoImg}
+                      alt="Suresh Builds"
+                      className="h-6 w-auto object-contain rounded border border-purple-500/25 hidden sm:inline-block"
+                    />
                   </div>
                   <h3 className="text-xl sm:text-2xl font-extrabold font-heading text-[var(--text-heading)]">
                     Suresh K.

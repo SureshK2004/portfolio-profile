@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowUpRight, Terminal, Sun, Moon } from 'lucide-react';
+import { Menu, X, ArrowUpRight, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
+import logoImg from '../../assets/logo.png';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -50,15 +51,16 @@ export const Navbar: React.FC = () => {
         {/* Brand / Logo */}
         <a
           href="#"
-          className="group flex items-center gap-2.5 font-heading tracking-wider text-sm sm:text-base font-bold transition-colors"
-          aria-label="Suresh K Portfolio Home"
+          className="group flex items-center focus:outline-none transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+          aria-label="Suresh Builds — Home"
         >
-          <div className="w-8 h-8 rounded-xl theme-badge flex items-center justify-center text-[var(--text-purple)] group-hover:scale-105 transition-all">
-            <Terminal className="w-4 h-4" />
+          <div className="h-9 sm:h-10 px-2 py-1 rounded-xl bg-neutral-950/90 dark:bg-black/70 border border-purple-500/30 group-hover:border-purple-500/70 shadow-sm shadow-purple-500/10 flex items-center justify-center transition-all">
+            <img
+              src={logoImg}
+              alt="Suresh Builds"
+              className="h-7 sm:h-8 w-auto object-contain rounded-md"
+            />
           </div>
-          <span className="text-[var(--text-heading)]">
-            SURESH <span className="text-[var(--text-purple)]">K.</span>
-          </span>
         </a>
 
         {/* Desktop Nav Links */}

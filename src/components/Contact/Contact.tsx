@@ -177,6 +177,7 @@ export const Contact: React.FC = () => {
               href={portfolioData.resumeUrl}
               target="_blank"
               rel="noopener noreferrer"
+              download="suresh_resume_2026.pdf"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl theme-card-subtle text-[var(--text-purple)] text-xs font-mono-tech font-semibold hover:border-purple-500 transition-colors shadow-sm border border-[var(--border-subtle)]"
             >
               <FileText className="w-3.5 h-3.5" />

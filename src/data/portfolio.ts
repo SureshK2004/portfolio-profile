@@ -13,6 +13,7 @@ export interface PortfolioMeta {
   github: string;
   liveUrl: string;
   resumeUrl: string;
+  logoUrl: string;
   aboutParagraph1: string;
   aboutParagraph2: string;
   profileImage: string;
@@ -42,7 +43,8 @@ export const portfolioData: PortfolioMeta = {
   linkedin: "https://linkedin.com/in/suresh-pythondev",
   github: "https://github.com/SureshK2004",
   liveUrl: "https://suresh-dev.netlify.app",
-  resumeUrl: "/Suresh_K-resume.pdf",
+  resumeUrl: "/suresh_resume_2026.pdf",
+  logoUrl: "/logo.png",
   profileImage: "/image.png",
   aboutParagraph1:
     "I am a Python Backend Developer with 1 year of production experience building scalable, production-grade backend systems using Python, Django, and Django REST Framework at Datamoo AI. My primary work centers around FaceViz — an AI-powered enterprise workforce management and biometric attendance platform serving active businesses.",
