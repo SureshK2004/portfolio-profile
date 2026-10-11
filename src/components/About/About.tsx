@@ -47,7 +47,7 @@ export const About: React.FC = () => {
                     </div>
                     <img
                       src={logoImg}
-                      alt="Suresh Builds"
+                      alt="Suresh K. — SURESH.DEV"
                       className="h-6 w-auto object-contain rounded border border-purple-500/25 hidden sm:inline-block"
                     />
                   </div>

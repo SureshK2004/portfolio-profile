@@ -24,14 +24,13 @@ export const experienceData: ExperienceData = {
   description:
     "Working on FaceViz, an AI-based facial recognition attendance and workforce management platform designed to automate daily employee operations for enterprise and field teams.",
   responsibilities: [
-    "Developed and maintained core backend services for FaceViz using Python and Django.",
-    "Designed and implemented REST APIs using Django REST Framework for attendance, employee management, and HR analytics.",
-    "Built Punch In / Punch Out workflows enabling real-time attendance capture, shift matching, and automated logging.",
-    "Integrated CCTV camera feeds via RTSP video streams for continuous, real-time edge processing.",
-    "Implemented end-to-end facial recognition pipeline using OpenCV and InsightFace for accurate biometric identification.",
-    "Optimized SQL queries and database schemas across PostgreSQL and MySQL to ensure rapid reporting response times.",
-    "Automated attendance workflows and scheduled cron workers, minimizing manual intervention and data errors.",
-    "Collaborated with cross-functional teams in an Agile environment, participating in sprint reviews and Git-based code reviews."
+    "Developed and maintained scalable backend services for workforce operations using Python, Django, and Django REST Framework.",
+    "Engineered robust RESTful APIs powering daily punch-in/out workflows, employee directory lookups, shift matching, and operational analytics.",
+    "Constructed an edge video pipeline integrating RTSP IP camera feeds with OpenCV for continuous real-time face detection and automated attendance capture.",
+    "Optimized complex SQL queries and relational indexing across PostgreSQL, reducing monthly report aggregation and analytics loading times.",
+    "Built automated Linux cron jobs and background workers for automated punch reconciliation and scheduled data maintenance.",
+    "Implemented automated image quality validation (blur and pose checks) and cooldown logic to eliminate duplicate punch-ins.",
+    "Collaborated actively in an Agile sprint cycle, participating in Git pull-request code reviews and API documentation."
   ],
   cards: [
     {
@@ -54,6 +53,8 @@ export const experienceData: ExperienceData = {
       summary: "Full-lifecycle employee operations, self-service portals, and structured approval channels.",
       items: [
         "Attendance",
+        "Location Geofencing",
+        "Shift Timings",
         "Payroll",
         "Tasks",
         "Timesheets",

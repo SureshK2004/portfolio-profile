@@ -9,14 +9,17 @@ export const Footer: React.FC = () => {
     <footer className="pt-8 pb-20 sm:pb-8 bg-transparent border-t border-purple-500/15 text-xs font-mono-tech text-neutral-500 dark:text-neutral-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 text-center sm:text-left">
-          <a href="#" className="group inline-flex items-center" aria-label="Back to top">
+          <a href="#" className="group inline-flex items-center gap-2" aria-label="Suresh K. — Back to top">
             <div className="h-8 px-2 py-0.5 rounded-lg bg-neutral-950/90 dark:bg-black/70 border border-purple-500/25 group-hover:border-purple-500/60 shadow-sm flex items-center justify-center transition-all group-hover:scale-105">
               <img
                 src={logoImg}
-                alt="Suresh Builds"
+                alt="Suresh K."
                 className="h-6 w-auto object-contain rounded"
               />
             </div>
+            <span className="font-heading font-bold text-neutral-800 dark:text-neutral-200 group-hover:text-purple-400 transition-colors">
+              SURESH<span className="text-purple-500">.DEV</span>
+            </span>
           </a>
           <span className="hidden sm:inline text-neutral-400 dark:text-neutral-700">|</span>
           <span className="text-neutral-600 dark:text-neutral-400">{portfolioData.role}</span>

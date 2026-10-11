@@ -50,15 +50,15 @@ export const skillsData: SkillCategory[] = [
   },
   {
     title: "AI / COMPUTER VISION",
-    subtitle: "Real-time edge recognition, detection & pipelines",
+    subtitle: "Edge computer vision, video streams & real-time pipelines",
     iconName: "Cpu",
     skills: [
-      { name: "OpenCV", detail: "Frame capture, colorspace & filtering" },
-      { name: "InsightFace", detail: "Deep facial feature extraction & 512D embeddings" },
-      { name: "SCRFD", detail: "High-speed face detection & landmark localization" },
-      { name: "ONNX Runtime", detail: "Hardware-accelerated neural inference" },
-      { name: "Image Processing", detail: "Adaptive histogram equalization & alignment" },
-      { name: "Face Recognition", detail: "Cosine distance matching & threshold tuning" }
+      { name: "OpenCV", detail: "Real-time frame ingestion, color spaces & transforms" },
+      { name: "Computer Vision", detail: "Face detection, landmark localization & tracking" },
+      { name: "Video Streaming", detail: "RTSP network feed capture & queue handling" },
+      { name: "ONNX Runtime", detail: "Edge model inference & performance optimization" },
+      { name: "Image Quality Checks", detail: "Laplacian sharpness filtering & pose validation" },
+      { name: "Biometric Attendance", detail: "API payload synchronization & punch verification" }
     ]
   },
   {
@@ -68,7 +68,6 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "Git", detail: "Branching workflows & version control" },
       { name: "GitHub", detail: "Code review, CI/CD actions & repositories" },
-      // { name: "Linux", detail: "Server administration, bash & permissions" },
       { name: "Cron", detail: "Scheduled automated maintenance jobs" },
       { name: "S3", detail: "Object storage & asset management" },
       { name: "DigitalOcean", detail: "Spaces bucket integration & compute" },

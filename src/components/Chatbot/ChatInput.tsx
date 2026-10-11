@@ -10,7 +10,7 @@ interface ChatInputProps {
 export const ChatInput: React.FC<ChatInputProps> = ({
   onSend,
   disabled = false,
-  placeholder = "Ask about Suresh's work, tech, or FaceViz..."
+  placeholder = "Ask about Suresh's work, tech, or projects..."
 }) => {
   const [text, setText] = useState('');
 

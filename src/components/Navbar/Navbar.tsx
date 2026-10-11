@@ -51,15 +51,23 @@ export const Navbar: React.FC = () => {
         {/* Brand / Logo */}
         <a
           href="#"
-          className="group flex items-center focus:outline-none transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
-          aria-label="Suresh Builds — Home"
+          className="group flex items-center gap-2.5 focus:outline-none transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+          aria-label="Suresh K. — Home"
         >
           <div className="h-9 sm:h-10 px-2 py-1 rounded-xl bg-neutral-950/90 dark:bg-black/70 border border-purple-500/30 group-hover:border-purple-500/70 shadow-sm shadow-purple-500/10 flex items-center justify-center transition-all">
             <img
               src={logoImg}
-              alt="Suresh Builds"
+              alt="Suresh K."
               className="h-7 sm:h-8 w-auto object-contain rounded-md"
             />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-sm font-bold font-heading tracking-wider text-[var(--text-heading)] group-hover:text-[var(--text-purple)] transition-colors">
+              SURESH<span className="text-[var(--text-purple)]">.DEV</span>
+            </span>
+            <span className="text-[10px] font-mono-tech text-[var(--text-muted)] tracking-widest hidden sm:inline">
+              SURESH K.
+            </span>
           </div>
         </a>
 

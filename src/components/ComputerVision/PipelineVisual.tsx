@@ -1,18 +1,13 @@
 import React from 'react';
 import { cvPipelineData } from '../../data/projects';
-import { Camera, Cpu, Eye, ShieldCheck, Crop, Sparkles, UploadCloud, CheckCircle, Database } from 'lucide-react';
+import { Camera, Cpu, Eye, ShieldCheck, CheckCircle } from 'lucide-react';
 
 const stepIcons: Record<string, React.ReactNode> = {
-  'CCTV CAMERA': <Camera className="w-4 h-4 text-[var(--text-purple)]" />,
+  'CAMERA FEED': <Camera className="w-4 h-4 text-[var(--text-purple)]" />,
   'FRAME CAPTURE': <Cpu className="w-4 h-4 text-[var(--text-purple)]" />,
   'FACE DETECTION': <Eye className="w-4 h-4 text-[var(--text-purple)]" />,
-  'FACE TRACKING': <ShieldCheck className="w-4 h-4 text-[var(--text-purple)]" />,
   'QUALITY CHECK': <ShieldCheck className="w-4 h-4 text-[var(--text-purple)]" />,
-  'FACE CROP': <Crop className="w-4 h-4 text-[var(--text-purple)]" />,
-  'IMAGE ENHANCEMENT': <Sparkles className="w-4 h-4 text-[var(--text-purple)]" />,
-  'API UPLOAD': <UploadCloud className="w-4 h-4 text-[var(--text-purple)]" />,
-  'FACEVIZ ATTENDANCE': <CheckCircle className="w-4 h-4 text-emerald-500" />,
-  'S3 STORAGE': <Database className="w-4 h-4 text-[var(--text-purple)]" />,
+  'ATTENDANCE SYNC': <CheckCircle className="w-4 h-4 text-emerald-500" />,
 };
 
 export const PipelineVisual: React.FC = () => {
@@ -26,7 +21,7 @@ export const PipelineVisual: React.FC = () => {
           </span>
         </div>
         <span className="text-[11px] font-mono-tech text-[var(--text-muted)] hidden sm:inline">
-          10-STAGE SEQUENTIAL PIPELINE
+          5-STAGE SEQUENTIAL PIPELINE
         </span>
       </div>
 

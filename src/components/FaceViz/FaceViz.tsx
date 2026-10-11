@@ -1,5 +1,5 @@
 import React from 'react';
-import { faceVizData } from '../../data/projects';
+import { workforcePlatformData } from '../../data/projects';
 import { ArchitectureVisual } from './ArchitectureVisual';
 import { CheckCircle2, Shield, Clock, MapPin, DollarSign, CalendarCheck, FileCheck, HelpCircle, FileSpreadsheet, BarChart3 } from 'lucide-react';
 import { ScrollReveal } from '../ScrollReveal';
@@ -24,27 +24,40 @@ export const FaceViz: React.FC = () => {
         <ScrollReveal>
           <div className="flex items-center gap-2 mb-3">
             <span className="text-xs font-mono-tech tracking-widest uppercase theme-badge font-semibold px-2.5 py-1 rounded-md shadow-sm">
-              04 / FEATURED WORK
+              04 / FEATURED PROFESSIONAL WORK
             </span>
           </div>
 
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
             <div>
-              <div className="inline-block px-2.5 py-1 rounded-md theme-badge text-xs font-mono-tech font-semibold mb-2">
-                CENTERPIECE PRODUCTION PLATFORM
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-md theme-badge text-xs font-mono-tech font-semibold mb-2">
+                <span>ENTERPRISE WORKFORCE SYSTEM</span>
+                <span className="text-[var(--text-muted)]">·</span>
+                <span className="text-[var(--text-purple)]">Datamoo AI</span>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold font-heading text-[var(--text-heading)] tracking-tight">
-                {faceVizData.name}: {faceVizData.title}
+                {workforcePlatformData.name}
               </h2>
+              <div className="text-sm sm:text-base font-mono-tech text-[var(--text-purple)] font-semibold mt-1">
+                {workforcePlatformData.title}
+              </div>
               <p className="text-base sm:text-lg text-[var(--text-body)] max-w-3xl mt-3 font-normal leading-relaxed">
-                {faceVizData.description}
+                {workforcePlatformData.description}
               </p>
+              <div className="mt-3.5 p-3.5 rounded-xl theme-card-subtle border border-purple-500/20 max-w-3xl">
+                <span className="text-xs font-mono-tech text-[var(--text-purple)] font-bold block mb-1">
+                  PROFESSIONAL CONTRIBUTION SCOPE:
+                </span>
+                <p className="text-xs sm:text-sm text-[var(--text-body)] font-normal leading-relaxed">
+                  {workforcePlatformData.roleScope}
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-2.5 shrink-0">
               <div className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl theme-card border border-purple-500/25 text-[var(--text-purple)] text-xs font-mono-tech font-semibold shadow-sm">
                 <span className="w-2 h-2 rounded-full bg-purple-500" />
-                <span>FaceViz</span>
+                <span>Workforce Platform</span>
               </div>
             </div>
           </div>
@@ -60,7 +73,7 @@ export const FaceViz: React.FC = () => {
           </ScrollReveal>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {faceVizData.modules.map((mod, idx) => (
+            {workforcePlatformData.modules.map((mod, idx) => (
               <ScrollReveal key={mod.title} delay={0.06 * (idx % 3)} direction="up" className="h-full">
                 <div className="h-full p-4 sm:p-5 rounded-2xl theme-card hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group shadow-sm flex flex-col justify-between">
                   <div>
@@ -98,19 +111,19 @@ export const FaceViz: React.FC = () => {
             <div className="flex items-center justify-between mb-6 pb-4 border-b border-[var(--border-subtle)]">
               <div>
                 <span className="text-xs font-mono-tech tracking-widest uppercase text-[var(--text-purple)] font-semibold block mb-1">
-                  ENGINEERING OWNERSHIP
+                  ENGINEERING CONTRIBUTIONS
                 </span>
                 <h3 className="text-lg sm:text-xl font-bold font-heading text-[var(--text-heading)]">
-                  WHAT I WORKED ON
+                  MY PRODUCTION CONTRIBUTIONS
                 </h3>
               </div>
               <div className="text-xs font-mono-tech text-[var(--text-muted)] hidden sm:block">
-                BACKEND & PIPELINE CONTRIBUTIONS
+                BACKEND, APIS & PIPELINE FOCUS
               </div>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3">
-              {faceVizData.myContributions.map((item) => (
+              {workforcePlatformData.myContributions.map((item) => (
                 <div
                   key={item}
                   className="p-3.5 rounded-xl theme-card-subtle hover:border-purple-500/60 hover:-translate-y-0.5 transition-all duration-200 flex items-center gap-2.5 group shadow-sm"

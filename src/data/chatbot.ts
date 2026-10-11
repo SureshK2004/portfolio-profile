@@ -17,10 +17,10 @@ export const chatbotConfig = {
         "Suresh K. is a Python/Django Full Stack Developer and Computer Vision Engineer based in Chennai, India. He builds production-oriented backend systems, workforce management platforms, REST APIs, Linux automation workflows, and edge computer-vision pipelines."
     },
     {
-      id: "faceviz",
-      text: "Tell me about FaceViz",
+      id: "workforce",
+      text: "Tell me about the Workforce Management Platform",
       response:
-        "FaceViz is an enterprise workforce operations platform that centralizes attendance, location validation, payroll workflows, tasks, timesheets, tickets, leave, expenses, and reporting. Suresh contributes directly to the Python/Django backend APIs, RTSP CCTV integration, PostgreSQL query optimization, and automation workflows."
+        "At DataMoo AI, Suresh contributes directly to the backend APIs and computer vision systems for an enterprise workforce operations platform (FaceViz). His work spans attendance logic, location geofencing, payroll workflows, tasks, timesheets, tickets, leave, expenses, PostgreSQL reporting, and real-time CCTV edge integration."
     },
     {
       id: "technologies",
@@ -30,15 +30,15 @@ export const chatbotConfig = {
     },
     {
       id: "cctv",
-      text: "Tell me about the CCTV project",
+      text: "Tell me about the CCTV pipeline",
       response:
-        "Suresh architected an end-to-end CCTV processing pipeline for automated attendance. It ingests live RTSP camera streams, detects faces using SCRFD and InsightFace, enforces blur/pose quality checks, normalizes facial crops, and securely transmits attendance records to the FaceViz backend with S3 audit storage."
+        "Suresh implemented a computer-vision pipeline for automated attendance. It connects to IP camera video feeds, performs real-time face detection with quality validation checks, and reliably synchronizes attendance logs with backend systems via secure APIs."
     },
     {
       id: "projects",
       text: "What projects has Suresh built?",
       response:
-        "In addition to FaceViz, Suresh has built CartGenius (a full-stack Django + React e-commerce platform), Translator Pro (a web translation tool with Flask & MongoDB), Aluminium Pro (a Django enterprise quotation and inventory system), and a Library Management System (Django + MySQL)."
+        "Beyond his professional work on enterprise workforce systems and the CCTV pipeline, Suresh has built CartGenius (a full-stack Django + React e-commerce platform), Translator Pro (a web translation tool with Flask & MongoDB), Aluminium Pro (a Django enterprise quotation and inventory system), and a Library Management System (Django + MySQL)."
     },
     {
       id: "contact",
@@ -59,8 +59,8 @@ export function getMockResponse(query: string): string {
   if (match) return match.response;
 
   // Keyword-based fallback matching
-  if (normalized.includes("faceviz")) {
-    return "FaceViz is a workforce management and employee operations platform that brings attendance, location validation, payroll, tasks, timesheets, tickets, leave, expenses, and reporting into a centralized system.";
+  if (normalized.includes("workforce") || normalized.includes("faceviz") || normalized.includes("platform")) {
+    return "Suresh contributes to an enterprise workforce management and employee operations platform (FaceViz) at DataMoo AI, focusing on Python/Django REST APIs, attendance logic, location geofencing, payroll workflows, PostgreSQL reporting, and real-time CCTV edge processing.";
   }
   if (
     normalized.includes("contact") ||
@@ -76,7 +76,7 @@ export function getMockResponse(query: string): string {
     normalized.includes("opencv") ||
     normalized.includes("vision")
   ) {
-    return "The CCTV face recognition pipeline handles real-time RTSP streaming, SCRFD neural face detection, face tracking, quality filtering, and synchronizes attendance punches directly into FaceViz with zero manual overhead.";
+    return "The CCTV face recognition pipeline ingests live camera video streams, applies real-time face detection and image quality checks, and automatically syncs attendance punches with backend enterprise systems with zero manual intervention.";
   }
   if (
     normalized.includes("skill") ||
@@ -91,7 +91,7 @@ export function getMockResponse(query: string): string {
     normalized.includes("datamoo") ||
     normalized.includes("work")
   ) {
-    return "Suresh currently works as a Python Backend Developer at Datamoo.ai in Chennai (1 year of production experience), building FaceViz. He holds a BCA degree (8.05 CGPA) and completed developer internships at Shiash Info Solutions and Polenza Tech Solutions.";
+    return "Suresh currently works as a Python Backend Developer at DataMoo AI in Chennai (1 year of production experience), engineering backend APIs and computer vision systems for workforce platforms. He holds a BCA degree (8.05 CGPA) and completed developer internships at Shiash Info Solutions and Polenza Tech Solutions.";
   }
   if (
     normalized.includes("education") ||
@@ -116,5 +116,5 @@ export function getMockResponse(query: string): string {
     return "You can view or download Suresh's complete resume using the button in the hero section or contact section, or directly link to /suresh_resume_2026.pdf.";
   }
 
-  return "I can answer questions regarding Suresh's experience at DataMoo AI, his work on FaceViz, the CCTV Face Recognition pipeline, his technical skill toolbox, or how to contact him. Try one of the suggested prompts below!";
+  return "I can answer questions regarding Suresh's experience at DataMoo AI, his work on Workforce Management Platforms, the CCTV Face Recognition pipeline, his technical skills, or how to contact him. Try one of the suggested prompts below!";
 }

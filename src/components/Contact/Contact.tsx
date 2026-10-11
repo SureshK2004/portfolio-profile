@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { portfolioData } from '../../data/portfolio';
-import { Mail, Send, Copy, Check, ArrowUpRight, MapPin, FileText, Clock, ShieldCheck } from 'lucide-react';
+import { Mail, Send, Copy, Check, ArrowUpRight, MapPin, FileText, ShieldCheck } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../Icons';
 import { ScrollReveal } from '../ScrollReveal';
 import { ContactForm } from './ContactForm';
@@ -132,16 +132,12 @@ export const Contact: React.FC = () => {
               </ScrollReveal>
             </div>
 
-            {/* Availability & Guarantee Card */}
+            {/* Availability Card */}
             <ScrollReveal delay={0.2} direction="up">
               <div className="p-5 rounded-2xl theme-card-subtle border border-[var(--border-subtle)] space-y-3">
                 <div className="flex items-center gap-2.5 text-xs font-mono-tech text-[var(--text-heading)] font-semibold">
-                  <Clock className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>Prompt Response: Within 24 Hours</span>
-                </div>
-                <div className="flex items-center gap-2.5 text-xs font-mono-tech text-[var(--text-body)]">
-                  <ShieldCheck className="w-4 h-4 text-purple-400 shrink-0" />
-                  <span>Open for Full-time Roles & Contracts</span>
+                  <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>Open for Full-time Engineering Roles</span>
                 </div>
                 <div className="flex items-center gap-2.5 text-xs font-mono-tech text-[var(--text-body)]">
                   <MapPin className="w-4 h-4 text-purple-400 shrink-0" />
@@ -169,7 +165,7 @@ export const Contact: React.FC = () => {
               </span>
               <span className="hidden sm:inline text-neutral-400">·</span>
               <span className="text-[var(--text-body)]">
-                Available for Full-time Roles & High-impact Contracts
+                Available for Full-time Opportunities
               </span>
             </div>
 

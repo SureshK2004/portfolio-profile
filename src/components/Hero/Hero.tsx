@@ -1,8 +1,8 @@
 import React from 'react';
-import { ArrowDown, ArrowUpRight, FileText, MapPin, Code2, Database, Eye } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, FileText, MapPin, Code2, Database, Eye, Layout } from 'lucide-react';
 import { portfolioData } from '../../data/portfolio';
 import { HeroArchitecture } from './HeroArchitecture';
-import facevizImg from '../../assets/faceviz.png';
+import heroImg from '../../assets/hero_image.png';
 import { motion } from 'framer-motion';
 
 export const Hero: React.FC = () => {
@@ -72,9 +72,12 @@ export const Hero: React.FC = () => {
 
             {/* Metadata Badges */}
             <div className="flex flex-wrap gap-2.5 sm:gap-3 text-xs font-mono-tech">
-              <div className="px-3.5 py-1.5 rounded-xl theme-card flex items-center gap-2 shadow-sm">
+              <div className="px-3.5 py-1.5 rounded-xl theme-card flex items-center gap-2 shadow-sm border border-emerald-500/30 bg-emerald-500/5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[var(--text-body)] font-medium">01+ YEAR EXPERIENCE</span>
+                <span className="text-emerald-400 font-semibold">AVAILABLE FOR FULL-TIME ROLES</span>
+              </div>
+              <div className="px-3.5 py-1.5 rounded-xl theme-card flex items-center gap-2 shadow-sm">
+                <span className="text-[var(--text-body)] font-medium">01+ YEAR PRODUCTION</span>
               </div>
               <div className="px-3.5 py-1.5 rounded-xl theme-card font-semibold text-[var(--text-purple)] shadow-sm">
                 PYTHON / DJANGO
@@ -86,7 +89,7 @@ export const Hero: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Right Column: FaceViz Platform Architecture Showcase */}
+          {/* Right Column: Workforce Systems Architecture Showcase */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -108,13 +111,13 @@ export const Hero: React.FC = () => {
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500/80" />
                     </div>
                     <span className="text-xs font-mono-tech text-neutral-300 font-semibold ml-1.5 hidden sm:inline">
-                      FaceViz Platform Architecture
+                      SURESH K. / TECHNICAL SHOWCASE
                     </span>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <div className="px-2.5 py-0.5 rounded-md bg-neutral-900/90 border border-purple-500/25 text-[10px] font-mono-tech text-purple-300 flex items-center gap-1.5">
-                      <span>FaceViz</span>
+                      <span>BACKEND & AI SYSTEMS</span>
                     </div>
 
                     <span className="text-[10px] font-mono-tech text-emerald-400 flex items-center gap-1">
@@ -127,52 +130,52 @@ export const Hero: React.FC = () => {
                 {/* Screenshot in pristine 16:9 widescreen format */}
                 <div className="relative w-full aspect-[16/9] overflow-hidden bg-neutral-950 flex items-center justify-center">
                   <img
-                    src={facevizImg}
-                    alt="FaceViz — Workforce Management Platform Architecture by Suresh K."
+                    src={heroImg}
+                    alt="Workforce Management Platform Architecture & Engineering Systems by Suresh K."
                     loading="eager"
                     decoding="async"
                     className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.01]"
                   />
                   {/* Subtle top edge gradient shadow */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />
-
-                  {/* Overlay branding badge */}
-                  <div className="absolute bottom-2.5 left-3 right-3 py-1.5 px-3 rounded-xl bg-black/80 backdrop-blur-md border border-purple-500/30 flex items-center justify-between text-xs font-mono-tech text-white">
-                    <div className="flex items-center gap-1.5">
-                      <span className="w-2 h-2 rounded-full bg-purple-500" />
-                      <span className="text-purple-300 font-bold">FaceViz Platform</span>
-                      <span className="text-neutral-400 hidden sm:inline text-[11px]">· Workforce & CCTV System</span>
-                    </div>
-                    <span className="text-neutral-300 text-[10px] font-medium">Built by Suresh K.</span>
-                  </div>
                 </div>
 
                 {/* Technical Node Strip — Cleanly Anchored Inside Card Footer */}
-                <div className="px-3.5 py-2.5 bg-neutral-950/95 dark:bg-[#0B0A14] border-t border-purple-500/20 flex flex-wrap items-center justify-between gap-2">
+                <div className="px-3.5 py-2.5 bg-[#0D0C18] border-t border-purple-500/25 flex flex-wrap items-center justify-between gap-2">
                   <div className="flex flex-wrap items-center gap-1.5 text-xs font-mono-tech">
-                    <span className="px-2.5 py-1 rounded-lg theme-chip text-[11px] font-semibold flex items-center gap-1">
-                      <Code2 className="w-3 h-3 text-[var(--text-purple)]" />
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold flex items-center gap-1">
+                      <Code2 className="w-3 h-3 text-purple-400" />
                       Python
                     </span>
-                    <span className="px-2.5 py-1 rounded-lg theme-chip text-[11px] font-semibold">
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold">
                       Django & DRF
                     </span>
-                    <span className="px-2.5 py-1 rounded-lg theme-chip text-[11px] font-semibold">
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold">
                       REST APIs
                     </span>
-                    <span className="px-2.5 py-1 rounded-lg theme-chip text-[11px] font-semibold flex items-center gap-1">
-                      <Database className="w-3 h-3 text-[var(--text-purple)]" />
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold flex items-center gap-1">
+                      <Database className="w-3 h-3 text-purple-400" />
                       PostgreSQL
                     </span>
-                    <span className="px-2.5 py-1 rounded-lg theme-chip text-[11px] font-semibold flex items-center gap-1">
-                      <Eye className="w-3 h-3 text-[var(--text-purple)]" />
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold flex items-center gap-1">
+                      <Layout className="w-3 h-3 text-purple-400" />
+                      React
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold">
+                      TypeScript
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold">
+                      Tailwind CSS
+                    </span>
+                    <span className="px-2.5 py-1 rounded-lg bg-purple-950/40 border border-purple-500/30 text-purple-200 text-[11px] font-semibold flex items-center gap-1">
+                      <Eye className="w-3 h-3 text-purple-400" />
                       Computer Vision
                     </span>
                   </div>
 
                   <a
                     href="#work"
-                    className="text-[11px] font-mono-tech text-[var(--text-purple)] hover:text-purple-300 transition-colors flex items-center gap-1 font-semibold"
+                    className="text-[11px] font-mono-tech text-purple-300 hover:text-purple-200 transition-colors flex items-center gap-1 font-semibold"
                   >
                     <span>EXPLORE DEEP DIVE</span>
                     <ArrowDown className="w-3 h-3" />

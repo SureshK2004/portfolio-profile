@@ -1,4 +1,4 @@
-export interface FaceVizModule {
+export interface WorkforceModule {
   title: string;
   description: string;
   badge: string;
@@ -22,11 +22,14 @@ export interface ProjectItem {
   featured?: boolean;
 }
 
-export const faceVizData = {
-  name: "FACEVIZ",
-  title: "Workforce Management & Employee Operations Platform",
+export const workforcePlatformData = {
+  name: "WORKFORCE MANAGEMENT PLATFORM",
+  productContext: "FaceViz Enterprise Suite",
+  title: "Workforce Operations & Employee Management System",
   description:
-    "FaceViz is a full-stack workforce management platform designed to simplify and digitize daily employee operations for office-based and field teams.",
+    "An enterprise workforce management and employee operations platform centralizing attendance, location validation, payroll workflows, tasks, timesheets, tickets, leave, expenses, and reporting into unified operational dashboards.",
+  roleScope:
+    "Professional engineering contributions focused on Python/Django REST API development, attendance business logic, location geofencing verification, PostgreSQL reporting optimizations, and edge computer-vision integration.",
   modules: [
     { title: "Attendance", description: "Real-time punch-in/out, biometric sync, and daily shift calculations.", badge: "Core" },
     { title: "Location & Geofencing", description: "GPS verification, radius validation, and field visit verification.", badge: "Security" },
@@ -69,43 +72,33 @@ export const faceVizData = {
   ]
 };
 
+// Maintained for backward compatibility
+export const faceVizData = workforcePlatformData;
+
 export const cvPipelineData = {
   heading: "CCTV Face Recognition & Attendance Pipeline",
   description:
-    "Designed and optimized a production-oriented CCTV processing pipeline that captures camera frames, detects and processes faces, performs quality and duplicate checks, enhances selected images, and synchronizes attendance data with the FaceViz platform.",
+    "An edge computer-vision workflow that processes IP camera video streams, detects faces in real time, verifies image quality, and synchronizes automated attendance records with backend enterprise APIs.",
   pipelineSteps: [
-    { step: 1, name: "CCTV CAMERA", sub: "RTSP Stream", detail: "Continuous IP camera feed ingestion over network" },
-    { step: 2, name: "FRAME CAPTURE", sub: "OpenCV", detail: "Threaded frame grabber with FPS throttling & drop-prevention" },
-    { step: 3, name: "FACE DETECTION", sub: "SCRFD Model", detail: "High-accuracy lightweight neural face localization" },
-    { step: 4, name: "FACE TRACKING", sub: "ID Consistency", detail: "Multi-frame trajectory tracking across frame boundaries" },
-    { step: 5, name: "QUALITY CHECK", sub: "Blur & Pose Filter", detail: "Laplacian sharpness & head pose angle validation" },
-    { step: 6, name: "FACE CROP", sub: "Affine Normalization", detail: "Bounding box padding & facial landmark alignment" },
-    { step: 7, name: "IMAGE ENHANCEMENT", sub: "Histogram & Gamma", detail: "Dynamic contrast adjustment for varying ambient lighting" },
-    { step: 8, name: "API UPLOAD", sub: "DRF Endpoints", detail: "Secure signed payload dispatch with retry backoff" },
-    { step: 9, name: "FACEVIZ ATTENDANCE", sub: "Business Logic", detail: "Shift matching, duplicate punch deduplication & record write" },
-    { step: 10, name: "S3 STORAGE", sub: "DigitalOcean Spaces", detail: "Audit trail archival with retention cleanup policy" }
+    { step: 1, name: "CAMERA FEED", sub: "RTSP Stream", detail: "Network video stream ingestion from IP cameras" },
+    { step: 2, name: "FRAME CAPTURE", sub: "Video Worker", detail: "Real-time frame extraction and processing" },
+    { step: 3, name: "FACE DETECTION", sub: "Vision Model", detail: "Lightweight face localization and tracking" },
+    { step: 4, name: "QUALITY CHECK", sub: "Filter Rules", detail: "Sharpness and clarity validation for reliable identification" },
+    { step: 5, name: "ATTENDANCE SYNC", sub: "Secure REST API", detail: "Verified attendance punch logging and audit storage" }
   ],
   technologies: [
     "Python",
     "OpenCV",
-    "InsightFace",
-    "SCRFD",
-    "ONNX Runtime",
-    "NumPy",
-    "Django REST Framework",
-    "DigitalOcean Spaces",
-    "Requests",
-    "Multithreading",
-    "Linux"
+    "Computer Vision",
+    "REST APIs",
+    "PostgreSQL",
+    "Cloud Storage"
   ],
   engineeringHighlights: [
-    { title: "Asynchronous Processing", desc: "Non-blocking frame capture decoupled from neural inference." },
-    { title: "Duplicate Detection", desc: "Temporal thresholding avoids repeated punches for lingering personnel." },
-    { title: "Retry Handling", desc: "Resilient exponential backoff with local spooling during network drops." },
-    { title: "Image Quality Checks", desc: "Heuristic rejection of blurry, occluded, or low-light face crops." },
-    { title: "Retention Cleanup", desc: "Automated rotation and expiration of temporary cache frames." },
-    { title: "CPU Optimization", desc: "ONNX Runtime with optimized graph execution for low-power edge machines." },
-    { title: "Resource Monitoring", desc: "Thread-safe memory bounds and camera watchdog autorecovery." }
+    { title: "Real-Time Processing", desc: "Smooth frame ingestion decoupled from network sync for low latency." },
+    { title: "Duplicate Prevention", desc: "Automated cooldown logic prevents multiple accidental punch logs." },
+    { title: "Network Resilience", desc: "Graceful retry mechanisms ensure logs are delivered even during network drops." },
+    { title: "System Reliability", desc: "Designed for steady, continuous execution on local edge hardware." }
   ]
 };
 
